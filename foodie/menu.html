@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='menu.html'">Menu</button>
+    <button onclick="location.href='cart.html'">Cart</button>
+    <button onclick="location.href='contact.html'">Contact</button>
+    <button onclick="history.back()">Back</button>
+  </nav>
+
+  <h1>Our Menu</h1>
+
+  <div class="menu-container">
+
+    <!-- Existing Items -->
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.ZZsn6lD6PCjocBzx1tuu1QHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+      <h3>Pizza</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹250</p>
+      <button onclick="addToCart('Pizza', 250)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.C6GhXnRJ_T5q75s9AIkWgwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Burger">
+      <h3>Burger</h3>
+      <p>⭐⭐⭐☆☆</p>
+      <p>₹150</p>
+      <button onclick="addToCart('Burger', 150)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.a7raDRyKbkdvQ6Yen9X7FQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pasta">
+      <h3>Pasta</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>₹200</p>
+      <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.ac1eqywNY6v75kxCxS9EVQHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain&o=7&rm=3f" alt="Sandwich">
+      <h3>Sandwich</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹120</p>
+      <button onclick="addToCart('Sandwich', 120)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/OIP.vkfMIpL0t7n5HUXjH7NRsAHaE6?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fries">
+      <h3>French Fries</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹80</p>
+      <button onclick="addToCart('French Fries', 80)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.JYjHrTgUFJjP2-Ekr6mmPQHaFj?w=1920&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Biryani">
+      <h3>Biryani</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>₹300</p>
+      <button onclick="addToCart('Biryani', 300)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://wallpapers.com/images/hd/decadent-chocolate-drizzled-ice-cream-cones-cbllfi2teqdl596p.jpg" alt="Ice Cream">
+      <h3>Ice Cream</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹100</p>
+      <button onclick="addToCart('Ice Cream', 100)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/OIP.iBeMl0lJU0FAyzyLxIEpXgHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cold Drink">
+      <h3>Cold Drink</h3>
+      <p>⭐⭐⭐☆☆</p>
+      <p>₹60</p>
+      <button onclick="addToCart('Cold Drink', 60)">Add to Cart</button>
+    </div>
+
+    <!-- 10 New Items -->
+    <div class="menu-item">
+      <img src="https://t3.ftcdn.net/jpg/06/10/04/06/360_F_610040695_37JCSGhDWLohWSPWt68mC44Qt1NRCh3Z.jpg" alt="Dosa">
+      <h3>Dosa</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>₹120</p>
+      <button onclick="addToCart('Dosa', 120)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://static.toiimg.com/photo/68631114.cms" alt="Idli">
+      <h3>Idli</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹80</p>
+      <button onclick="addToCart('Idli', 80)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.rFMqDcZHuYD_7JbfVdvAuQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Samosa">
+      <h3>Samosa</h3>
+      <p>⭐⭐⭐☆☆</p>
+      <p>₹40</p>
+      <button onclick="addToCart('Samosa', 40)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.YYDomzbO21we59FpUxW_4QHaLH?w=1200&h=1800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Noodles">
+      <h3>Noodles</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹180</p>
+      <button onclick="addToCart('Noodles', 180)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/OIP.6TbOEpe5a_9zXWsDIUP2SAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fried Rice">
+      <h3>Fried Rice</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹200</p>
+      <button onclick="addToCart('Fried Rice', 200)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://simple-veganista.com/wp-content/uploads/2012/09/healthy-chopped-vegetable-salad-recipe-3.jpg" alt="Salad">
+      <h3>Salad</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>₹90</p>
+      <button onclick="addToCart('Salad', 90)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/R.fb2449c3d7eb47ec7273aa9780744d4a?rik=R3TohhXABg8DxA&riu=http%3a%2f%2fcdn2.tmbi.com%2fTOH%2fImages%2fPhotos%2f37%2f1200x1200%2fSummer-Vegetable-Soup_exps18529_HWS133216C07_11_2bC_RMS.jpg&ehk=Z7bq5RV015Ctmx1eQED9vCGaL6uWRrq4ZPUS90yyrus%3d&risl=&pid=ImgRaw&r=0" alt="Soup">
+      <h3>Soup</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹110</p>
+      <button onclick="addToCart('Soup', 110)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.4WUjqZXl4tBdfKEwgN9FKAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coffee">
+      <h3>Coffee</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>₹70</p>
+      <button onclick="addToCart('Coffee', 70)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.QFZj1pyMT7MML0mad43xQwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tea">
+      <h3>Tea</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹50</p>
+      <button onclick="addToCart('Tea', 50)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/OIP.PfKYjxBwjwuE6cyS3xd-1QHaEx?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Juice">
+      <h3>Juice</h3>
+      <p>⭐⭐⭐⭐☆</p>
+      <p>₹90</p>
+      <button onclick="addToCart('Juice', 90)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
